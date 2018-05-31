@@ -1,13 +1,13 @@
 import java.awt.*;
 import java.awt.Graphics;
 import java.awt.Rectangle;
-public class Scull extends Rectangle{
+public class Paddle extends Rectangle{
 
     private boolean up = false, down = false;
 
     private int downKey, upKey;
 
-    public Scull(Rectangle r, int upKey, int downKey){
+    public Paddle(Rectangle r, int upKey, int downKey){
         setBounds(r);
         y -=(height / 2)
         this.upKey = upKey;
