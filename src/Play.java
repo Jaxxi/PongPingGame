@@ -2,7 +2,7 @@ import java.awt.*;
 import java.awt.event.KeyEvent;
 
 public class Play {
-
+            /**Number of players*/
     public Scull p1, p2;
 
     public Play(){
@@ -12,6 +12,7 @@ public class Play {
         p1 = new Scull(new Rectangle(0, GameCanvas.HEIGHT / - 2, 20, 100, KeyEvent.VK_W, KeyEvent.VK_S));
         p2 = new Scull(new Rectangle(GameCanvas.WIDTH - 20, GameCanvas.HEIGHT / 2, 20, 100), KeyEvent.VK_UP, KeyEvent.VK_DOWN);
     }
+    /**Update game*/
     public void update(){
         p1.update();
         p2.update();
