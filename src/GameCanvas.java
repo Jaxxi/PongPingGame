@@ -8,14 +8,14 @@ import java.awt.event.KeyListener;
 public class GameCanvas extends Canvas implements Runnable, KeyListener {
 
     private static final long serialVersionUID = 1L;
-
+            /** Size of the canvas*/
     public static final int WIDTH = 500;
     public static final int HEIGHT = 500;
 
     public static Dimension size = new Dimension(WIDTH, HEIGHT);
 
     public boolean Running = false;
-
+            /** Fps on the game*/
     private int FPS = 60;
     private long targetTime = 1000 / FPS;
 
